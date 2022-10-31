@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         webview.setWebViewClient(new GeoWebViewClient());
         // Below required for geolocation
         webview.getSettings().setJavaScriptEnabled(true);
+        // webview.getSettings().setJavaScriptEnabled(false);
         webview.getSettings().setGeolocationEnabled(true);
         webview.setWebChromeClient(new GeoWebChromeClient());
         webview.loadUrl("file:///android_asset/MapSearch.html");
